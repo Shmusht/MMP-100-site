@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <style>
+        /* Reset margin and padding to ensure a clean start */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* General Page Styles */
+        html, body {
+            height: 100%;
+            font-family: 'Courier New', Courier, monospace;  /* Rough, typewriter font for grunge look */
+            background-color: black;  /* Dark background to match Home page */
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            line-height: 1.6;
+            padding: 10px;
+        }
+
+        /* Container for the content */
+        .container {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding-top: 50px; /* Ensure content doesn't sit directly at the top */
+        }
+
+        /* Grunge Navigation Bar */
+        nav {
+            background-color: #333;  /* Dark background for nav */
+            padding: 15px 0;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);  /* Shadow to give it depth */
+            border-bottom: 3px solid #444;  /* Broken look for bottom border */
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav ul li {
+            margin: 0 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #FFA500;  /* Grungey orange color */
+            font-size: 22px;
+            font-weight: bold;
+            padding: 10px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  /* Text shadow for grunge feel */
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: rgba(255, 165, 0, 0.4);
+            border-radius: 5px;
+            transform: scale(1.1);
+        }
+
+        /* Grunge Style for Main Content */
+        main {
+            margin-top: 80px; /* Prevent overlap with fixed nav */
+            font-size: 18px;
+            max-width: 800px;
+            background-color: rgba(0, 0, 0, 0.8);  /* Darker, opaque background to match Home page */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8); /* Shadow to enhance focus */
+            margin-bottom: 50px;
+        }
+
+        main h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #FFA500;  /* Orange text color */
+            text-transform: uppercase;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        main p {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #ccc;  /* Lighter text color for paragraphs */
+        }
+
+        /* Grunge Image Styles */
+        img {
+            margin: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 100%;
+            height: auto;
+            max-height: 600px; /* Set a max height of 600px */
+            border: 5px solid #444; /* Border around image to give it a rugged feel */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);  /* Shadow effect for image */
+            transition: all 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Footer Styles */
+        footer {
+            font-size: 14px;
+            margin-top: 20px;
+            padding: 20px 0;
+            background-color: #333;
+            color: #ccc;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Subtle shadow for footer text */
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Grunge Navigation Bar -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="project.html">Projects</a></li> <!-- Updated link -->
+            </ul>
+        </nav>
+
+        <main>
+            <h1>Projects</h1>
+            <p>Here is more of me</p>
+
+            <!-- Project Descriptions -->
+            <section>
+                <h2>@ The Delancey</h2>
+                <p>A little clip of a show I did recently at The Delancey in the LES </p>
+                <video width="320" height="240" controls>
+                    <source src="988_0614.MP4" type="video/mp4">
+                    <source src="movie.ogg" type="video/ogg">
+                    Your browser does not support the video tag.
+                </video>
+            </section>
+
+            <section>
+                <h2>BMCC Fall 2024 concert</h2>
+                <p>Singing "Blood Sport" by Sleep Token (Featuring Daniel Ramirez) </p>
+                <video width="320" height="240" controls>
+                    <source src="IMG_2735.MP4" type="video/mp4">
+                    <source src="movie.ogg" type="video/ogg">
+                    Your browser does not support the video tag.
+                </video>
+            </section>
+
+        </main>
+
+        
+        <footer>
+            <p>Copyright 2024 Adam Stone-Merenstein</p>
+        </footer>
+    </div>
+</body>
+
+</html>
