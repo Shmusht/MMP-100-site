@@ -21,7 +21,7 @@
             color: white;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start; /* Changed from center to flex-start */
             text-align: center;
             line-height: 1.6;
             padding: 10px;
@@ -35,7 +35,6 @@
             justify-content: center;
             align-items: center;
             width: 100%;
-            padding-top: 50px; /* Ensure content doesn't sit directly at the top */
         }
 
         /* Grunge Navigation Bar */
@@ -82,7 +81,7 @@
 
         /* Grunge Style for Main Content */
         main {
-            margin-top: 120px; /* Increased from 100px to 120px to move it further down */
+            margin-top: 80px; /* Space for the fixed navbar */
             font-size: 18px;
             max-width: 800px;
             background-color: rgba(0, 0, 0, 0.7);
@@ -133,11 +132,6 @@
         img:hover {
             transform: scale(1.05);
         }
-
-        /* Move the About Me Section down by 20px */
-        section {
-            margin-top: 20px;
-        }
     </style>
 </head>
 
@@ -146,7 +140,7 @@
         <!-- Grunge Navigation Bar -->
         <nav>
             <ul>
-                <li><a href="Index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="project.html">Projects</a></li> <!-- Updated the link to "project.html" -->
                 <li><a href="psa.html">PSA</a></li> <!-- New link added here -->
@@ -156,13 +150,7 @@
         <main>
             <h1>My name is Adam Stone-Merenstein</h1>
             <p>I am a Jazz Student at BMCC</p>
-            <p>Welcome to what I did this semester</p>
-
-            <!-- About Me Section -->
-            <section>
-                <h2>About Me</h2>
-                <p>Hi, my name is Adam Stone-Merenstein. I am Bronx born and raised. I am a Jazz major specializing in voice, and I also play guitar, bass, and piano. I love performing and writing music. This semester I have performed multiple times for the BMCC music department and on my own. I learned a lot this semester and loved doing this. I even made an album cover while messing around in Photoshop. I hope you enjoy!</p>
-            </section>
+            <p>Welcome to what I did this semester. Welcome to what I did this semester" saying "Hi my name Is Adam Stone-Merenstein, I am Bronx born and raised. I am a Jazz major specializing in voice, I also play guitar, bass, and piano. I love performing and writing music. This semester I have performed multiple times for the BMCC music department and on my own. I learned a lot this semester and loved doing this I even made an album cover while messing around in Photoshop. I hope you enjoy </p>
         </main>
 
         <img src="IMG_4587.png" alt="Me recording in a studio">
