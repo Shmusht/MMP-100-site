@@ -21,10 +21,11 @@
             color: white;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start; /* Change from center to flex-start to avoid cutting off content */
             text-align: center;
             line-height: 1.6;
             padding: 10px;
+            margin: 0;
         }
 
         /* Container for the content */
@@ -32,10 +33,10 @@
             text-align: center;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-start; /* Align items from the top */
             align-items: center;
             width: 100%;
-            padding-top: 50px; /* Ensure content doesn't sit directly at the top */
+            margin-top: 120px; /* This pushes the container below the fixed nav */
         }
 
         /* Grunge Navigation Bar */
@@ -82,7 +83,6 @@
 
         /* Grunge Style for Main Content */
         main {
-            margin-top: 80px; /* Prevent overlap with fixed nav */
             font-size: 18px;
             max-width: 800px;
             background-color: rgba(0, 0, 0, 0.8);  /* Darker, opaque background to match Home page */
@@ -109,6 +109,7 @@
         /* Grunge Media Styling */
         section {
             margin-bottom: 40px;
+            padding: 20px;
         }
 
         iframe, video {
