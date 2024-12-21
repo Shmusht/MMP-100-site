@@ -21,7 +21,7 @@
             color: white;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;  /* Changed to flex-start to align the content at the top */
             text-align: center;
             line-height: 1.6;
             padding: 10px;
@@ -127,6 +127,24 @@
             border-radius: 5px;
         }
 
+        .gallery-item h2 {
+            font-size: 32px;  /* Larger font size for titles */
+            color: #FFA500;  /* Title color */
+            text-transform: uppercase;
+            margin-bottom: 15px; /* Adjusted space below title */
+            font-weight: bold;
+            letter-spacing: 3px;  /* Increased letter-spacing for a bolder effect */
+            text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);  /* Stronger text shadow for more contrast */
+            transition: all 0.3s ease;  /* Smooth transition effect */
+        }
+
+        /* Hover effect for titles */
+        .gallery-item h2:hover {
+            color: #FFD700;  /* Slightly lighter gold color when hovered */
+            text-shadow: 6px 6px 12px rgba(255, 215, 0, 0.7); /* Glow effect when hovered */
+            transform: translateY(-5px);  /* Slight upward movement on hover */
+        }
+
         .audio-player {
             margin-top: 20px;
         }
@@ -162,13 +180,13 @@
             <div class="gallery">
                 <!-- Photo -->
                 <div class="gallery-item">
-                    <h2>Selfie</h2>
+                    <h2>Me, Myselfie, And I</h2>
                     <img src="AdamMerenstein_Selfie600px.png" alt="Adam Stone-Merenstein Selfie">
                 </div>
 
                 <!-- Audio -->
                 <div class="gallery-item audio-player">
-                    <h2>Audio: MMP Audio HW</h2>
+                    <h2>Soundscapes: Day at the beach</h2>
                     <audio controls>
                         <source src="MMPAudioHW.mp3" type="audio/mp3">
                         Your browser does not support the audio element.
@@ -177,7 +195,7 @@
 
                 <!-- Video -->
                 <div class="gallery-item">
-                    <h2>Video: Adam</h2>
+                    <h2>Animation</h2>
                     <video controls>
                         <source src="Adam.mp4" type="video/mp4">
                         Your browser does not support the video tag.
