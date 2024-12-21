@@ -106,22 +106,16 @@
             color: #ccc;  /* Lighter text color for paragraphs */
         }
 
-        /* Grunge Image Styles */
-        img {
-            margin: 20px;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            max-width: 100%;
-            height: auto;
-            max-height: 600px; /* Set a max height of 600px */
-            border: 5px solid #444; /* Border around image to give it a rugged feel */
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);  /* Shadow effect for image */
-            transition: all 0.3s ease;
+        /* Grunge Media Styling */
+        section {
+            margin-bottom: 40px;
         }
 
-        img:hover {
-            transform: scale(1.05);
+        iframe, video {
+            max-width: 100%;
+            border: 5px solid #444;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);  /* Shadow effect for media */
+            border-radius: 5px;
         }
 
         /* Footer Styles */
@@ -134,7 +128,6 @@
             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Subtle shadow for footer text */
         }
 
-        
     </style>
 </head>
 
@@ -152,18 +145,18 @@
 
         <main>
             <h1>Projects</h1>
-            <p>Here is more of me</p>
+            <p>Here are some of my latest projects and performances:</p>
 
             <!-- Project Descriptions -->
             <section>
-                <h2>@ The Delancey</h2>
-                <p>A little clip of a show I did recently at The Delancey in the LES</p>
+                <h2>Live at The Delancey</h2>
+                <p>Experience a clip from a show I performed recently at The Delancey in the Lower East Side (LES).</p>
                 <iframe width="320" height="240" src="https://www.youtube.com/embed/a6AWL1Wdbxo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </section>
 
             <section>
-                <h2>BMCC Fall 2024 concert</h2>
-                <p>Singing "Blood Sport" by Sleep Token (Featuring Daniel Ramirez) </p>
+                <h2>Singing "Blood Sport" at BMCC Fall 2024 Concert</h2>
+                <p>Watch me perform "Blood Sport" by Sleep Token, featuring Daniel Ramirez, at the BMCC Fall 2024 concert.</p>
                 <video width="320" height="240" controls>
                     <source src="IMG_2735.MP4" type="video/mp4">
                     <source src="movie.ogg" type="video/ogg">
@@ -173,7 +166,6 @@
 
         </main>
 
-        
         <footer>
             <p>Copyright 2024 Adam Stone-Merenstein</p>
         </footer>
